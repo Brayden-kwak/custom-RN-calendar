@@ -1,5 +1,5 @@
 import {View, Text, Pressable, StyleSheet} from 'react-native';
-import React, {useState} from 'react';
+import React from 'react';
 
 const CalendarHeader = (props: any) => {
   return (

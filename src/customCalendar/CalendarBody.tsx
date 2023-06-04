@@ -4,7 +4,7 @@ import GestureRecognizer from 'react-native-swipe-gestures';
 import 'react-native-get-random-values';
 import {v4 as uuidv4} from 'uuid';
 
-const divideArray = (data = [], size = 1) => {
+const divideArray = (data = [] as any, size = 1) => {
   const array = [];
   for (let i = 0; i < data.length; i += size) {
     array.push(data.slice(i, i + size));
@@ -138,7 +138,7 @@ const CalendarBody = (props: any) => {
       <View style={C.dayOfWeek}>
         {dayOfWeek.map((day: any, index: number) => (
           <View style={C.box} key={index}>
-            <Text style={changeColorByDay(day).dayOfweek}>{day}</Text>
+            <Text style={changeColorByDay(day).dayOfWeek}>{day}</Text>
           </View>
         ))}
       </View>
